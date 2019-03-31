@@ -40,6 +40,7 @@ class PubSub {
 
     publish({ channel, message }) {
         this.pubnub.publish({channel, message});
+        // TODO
         // this.pubnub.unsubscribe(channel, () => {
         //     this.pubnub.publish({channel, message}, () => {
         //         this.pubnub.subscribe(channel);
